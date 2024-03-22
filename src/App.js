@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn Shokhaway XD
+          Learn Shokhaway
         </a>
       </header>
     </div>
