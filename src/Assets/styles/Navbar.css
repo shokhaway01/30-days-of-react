@@ -1,0 +1,11 @@
+body{
+    /* height: 400vh; */
+}
+.nav{
+    background-color: deepskyblue;
+    width: 350px;
+    padding: 30px;
+    height: 89vh;
+    z-index: 0;
+    /* position: fixed; */
+}
