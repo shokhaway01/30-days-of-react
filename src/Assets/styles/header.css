@@ -41,6 +41,7 @@ li a{
     border: 2px solid yellow;
     font-weight: 650;
 }
+/* new */
 
 li a:hover{
     background-color: yellow;
