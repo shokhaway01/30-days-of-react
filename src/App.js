@@ -17,7 +17,7 @@ function App() {
           rel="noopener noreferrer"
         >
           Tabriklayman
-          Learn React Today's first changing /
+          Learn React Today's first changing / 
         </a>
       </header>
     </div>
