@@ -1,3 +1,6 @@
+body{
+    height: 200vh;
+}
 .header{
     background-color: blue;
     padding: 20px;
@@ -24,4 +27,13 @@ div ul li{
 div ul li a{
     text-decoration: none;
     color:white;
+    padding: 5px 15px;
+}
+
+div ul li a:hover{
+    color: blue;
+    transition: 0.5s ease-in-out;
+    background-color: yellow;
+    border-radius: 5px;
+    box-shadow: 0 0 5px yellow;
 }
