@@ -1,6 +1,27 @@
 .header{
     background-color: blue;
-    padding: 25px;
+    padding: 20px;
     color: wheat;
     font-size: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+div ul{
+    display: flex;
+    justify-content: space-around;
+    /* background-color: whitesmoke; */
+    column-gap: 40px;
+}
+
+div ul li{
+    list-style: none;
+}
+
+div ul li a{
+    text-decoration: none;
+    color:white;
 }
