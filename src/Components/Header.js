@@ -10,19 +10,15 @@ const Header = () => {
             </div>
             <div>
                 <ul>
-{/*  */}
                     <li>
-                        <a href='#'>Home</a>
+                        <a href='https://github.com/shokhaway01?tab=overview&from=2024-03-01&to=2024-03-31'>Home</a>
                     </li>
-{/*  */}
                     <li>
-                        <a href='#'>About</a>
+                        <a href='https://github.com/shokhaway01?tab=overview&from=2024-03-01&to=2024-03-31'>About</a>
                     </li>
-{/*  */}
                     <li>
-                        <a href='#'>Github</a>
+                        <a href='https://github.com/shokhaway01?tab=overview&from=2024-03-01&to=2024-03-31'>Github</a>
                     </li>
-{/*  */}
                 </ul>
             </div>
         </div>
