@@ -2,9 +2,10 @@ body{
     height: 200vh;
 }
 .header{
-    background-color: blue;
+    background-color: #363649;
     padding: 20px;
     color: wheat;
+    font-weight: 650;
     font-size: 25px;
     display: flex;
     justify-content: space-around;
@@ -26,14 +27,14 @@ div ul li{
 
 div ul li a{
     text-decoration: none;
-    color:white;
+    color:wheat;
     padding: 5px 15px;
 }
 
 div ul li a:hover{
-    color: blue;
-    transition: 0.5s ease-in-out;
-    background-color: yellow;
+    color: #363649;
+    transition: 0.3s ease-in-out;
+    background-color: wheat;
     border-radius: 5px;
     box-shadow: 0 0 5px yellow;
 }
