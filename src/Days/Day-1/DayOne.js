@@ -49,6 +49,16 @@ const DayOne = () => {
                 <p>
                     <b>Внутри массивов вы с легкостью можете помещать массив внутри массивов и также комбинировать различного рода типы данных</b>
                 </p>
+                <p>
+                const arr = [ <br/>
+                        'Asabeneh',<br/>
+                        250,<br/>
+                        true,<br/>
+                        country: ['Finland', city: 'Helsinki' ,<br/>
+                        skills: ['HTML', 'CSS', 'JS', 'React', 'Python'] },<br/>
+                        ] // arr containing different data types<br/>
+                        console.log(arr) <br/>
+                </p>
 
                 </li>
 
