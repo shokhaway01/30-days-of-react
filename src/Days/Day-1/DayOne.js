@@ -26,6 +26,9 @@ const DayOne = () => {
                 </li>
             </ol>
         </p>
+        <br/>
+        <h3>Arrays - Массивы</h3>
+
     </div>
   )
 }
