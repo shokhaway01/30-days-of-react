@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 const DayOne = () => {
   return (
     <div>
@@ -50,7 +51,7 @@ const DayOne = () => {
                     <b>Внутри массивов вы с легкостью можете помещать массив внутри массивов и также комбинировать различного рода типы данных</b>
                 </p>
                 <p>
-                    <img src='../../images/day-1.jpg' alt='unknown'/>
+                    <img src='day-1.jpg' alt='unknown'/>
                 </p>
 
                 </li>
