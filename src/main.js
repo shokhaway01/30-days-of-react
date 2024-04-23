@@ -31,3 +31,10 @@ console.log(index);
 index != -1 
     ? console.log('This fruit does exist in the array')
     : console.log('Does not exist!!!');
+
+
+// а также существует метод тустринг, который переводит тип массива в строку
+
+let arrToString = berries.toString();
+
+console.log(arrToString);
