@@ -37,4 +37,6 @@ index != -1
 
 let arrToString = berries.toString();
 
+// А еще здесь вы можете использовать оченнь большое количество новых методов для облегчения ваших задач 
+
 console.log(arrToString);
