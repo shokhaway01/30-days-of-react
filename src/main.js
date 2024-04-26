@@ -24,9 +24,11 @@ let berries = ['Strawberries', 'Bluebery','cherry'];
 let exotics = ['banana','apple', 'orange','pineapple']
 
 let fruits = berries.concat(exotics);
+// Black lives metter
 
 let index = fruits.indexOf('Bluebery');
 console.log(index);
+
 
 index != -1 
     ? console.log('This fruit does exist in the array')
