@@ -17,6 +17,7 @@ let third = Array(1).fill(3);
 
 let both = first.concat(second.concat(third));
 
+// 
 // console.log(both);
 
 
@@ -28,6 +29,7 @@ let fruits = berries.concat(exotics);
 
 let index = fruits.indexOf('Bluebery');
 console.log(index);
+
 
 
 index != -1 
