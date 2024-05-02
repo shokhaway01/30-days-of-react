@@ -17,6 +17,7 @@ let third = Array(1).fill(3);
 
 let both = first.concat(second.concat(third));
 
+// ЙОооо
 // Привет здарова
 // console.log(both);
 
