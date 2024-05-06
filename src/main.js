@@ -20,6 +20,7 @@ hgfhj
 // ЙОооо
 // Привет здарова
 // console.log(both);
+// 
 
 
 let berries = ['Strawberries', 'Bluebery','cherry'];
