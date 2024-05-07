@@ -23,6 +23,7 @@ hgfhj
 // 
 
 
+
 let berries = ['Strawberries', 'Bluebery','cherry'];
 let exotics = ['banana','apple', 'orange','pineapple']
 
