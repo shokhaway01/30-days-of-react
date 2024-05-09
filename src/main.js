@@ -16,11 +16,7 @@ let second = Array(1).fill(2);
 let third = Array(1).fill(3);
 
 let both = first.concat(second.concat(third));
-hgfhj
-// ЙОооо
-// Привет здарова
-// console.log(both);
-// 
+
 
 
 
