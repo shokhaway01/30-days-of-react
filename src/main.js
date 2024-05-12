@@ -4,12 +4,6 @@ console.log(newLineArr);
 // Тут вы можете заметить как работает метод сплит/split
 
 let asli = Array(5).fill('xxx')
-// console.log(asli);
-
-// А тут вы можете наблюдать как наш пустой массив заполняется статичными данными
-
-// Привет снова
-// Чтобы вы могли прибавлять или объединить два или более массивов то вы можете использовать метод concat
 
 let first = Array(1).fill(1);
 let second = Array(1).fill(2);
@@ -18,13 +12,13 @@ let third = Array(1).fill(3);
 let both = first.concat(second.concat(third));
 
 
+// Привет как ты и что делаешь
 
 
 let berries = ['Strawberries', 'Bluebery','cherry'];
 let exotics = ['banana','apple', 'orange','pineapple']
 
 let fruits = berries.concat(exotics);
-// Black lives metter
 
 let index = fruits.indexOf('Bluebery');
 console.log(index);
