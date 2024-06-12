@@ -73,6 +73,7 @@ const DayOne = () => {
                     <p style={{width:'850px', padding:'25px', border:'2px solid black', borderRadius: '15px', marginLeft: '25px'}}>
                         В массивах или же Array элементы начинаются считаться с - 0, то есть если вы засунете туда 5 элементов то при прямом обращении вы сможете обратиться до 5 го
                     </p>
+                    .
 
                 </li>
             </ol>
