@@ -1,10 +1,21 @@
 import './App.css';
 
-import Days from './Components/days';
 function App() {
   return (
     <>
-      <Days/>
+    REACT
+    <Tec />
+    </>
+  );
+}
+
+
+const Tec = (props) =>{
+  return(
+    <>
+      <h1>
+          This is kinda of technologies bruh
+      </h1> 
     </>
   );
 }
