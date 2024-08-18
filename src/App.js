@@ -1,23 +1,17 @@
 import './App.css';
+import Header from './Components/Header';
+import Technologies from './Components/Technologies';
+
 
 function App() {
   return (
     <>
-    REACT
-    <Tec />
+    REACT 
+    <Technologies />
+    <Header />
     </>
   );
 }
 
-
-const Tec = (props) =>{
-  return(
-    <>
-      <h1>
-          This is kinda of technologies bruh
-      </h1> 
-    </>
-  );
-}
 
 export default App;
