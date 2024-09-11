@@ -1,0 +1,21 @@
+.container{
+    background-color: deeppink;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 15px 0;
+    align-items: center;
+    position: relative;
+    font-size: 30px;
+}
+
+.container li, .container a{
+    text-decoration: none;
+    color: darkblue;
+    font-style:oblique;
+    font-weight: 550;
+    border-bottom: 3px solid darkblue;
+}

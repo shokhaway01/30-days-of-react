@@ -1,14 +1,14 @@
 import './App.css';
-import Header from './Components/Header';
-import Technologies from './Components/Technologies';
-
+import Header from './Components/Header/Header';
+import Technologies from './Components/Technologies/Technologies';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
     <>
-    REACT 
-    <Technologies />
     <Header />
+    <Technologies />
+    <Footer />
     </>
   );
 }
