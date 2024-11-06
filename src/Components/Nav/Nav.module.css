@@ -1,0 +1,22 @@
+.navigation {
+    background-color: red;
+    grid-area: nav;
+}
+
+.direction {
+    list-style: none;
+    color: white;
+}
+
+.wrapper {
+}
+
+.item {
+    color: white;
+    text-decoration: none;
+    color: none;
+}
+
+.item.active {
+    color: gold;
+}
