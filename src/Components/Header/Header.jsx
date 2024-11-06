@@ -3,22 +3,9 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <ul className='container'>
-      {/* Home */}
-      <li>
-        <a href="">
-          LOGO
-        </a>
-      </li>
-      {/* Profile */}
-      <li>
-        <a href="">
-          <input type="text" />
-        </a>
-      </li>
-      {/* Dialogs */}
-      
-    </ul>
+      <header className='header'>
+          <img src='https://avatars.mds.yandex.net/i?id=9522e809cca90b7989c8b599d194bffa-4080091-images-thumbs&n=13'/>
+      </header>
   )
 }
 

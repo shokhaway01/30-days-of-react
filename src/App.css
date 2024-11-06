@@ -1,12 +1,27 @@
 *{
-    margin: 0;
     padding: 0;
-}
-body{
-    overflow-x: hidden;
+    margin: 0;
 }
 
-.REACT{
-    font-size: 200px;
-    color: rgb(255, 255, 255);
+body{
+    margin: 100px auto;
+    /* padding: 30px 200px; */
+    width: 1200px;
+    background-color: #363636;
+
+}
+
+
+.app-wrapper {
+    display: grid;
+    grid-template: 
+    "head head head"
+    "nav con con"
+    "foot foot foot";
+    gap: 15px;
+    box-shadow: 0 0 25px black;
+    grid-template-rows: 60px 5fr 1fr;
+    grid-template-columns: 2fr 10fr;
+    height: 200vh;
+
 }

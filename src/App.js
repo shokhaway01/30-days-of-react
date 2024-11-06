@@ -1,15 +1,17 @@
 import './App.css';
 import Header from './Components/Header/Header';
-import Technologies from './Components/Technologies/Technologies';
 import Footer from './Components/Footer/Footer';
+import Nav from './Components/Nav/Nav';
+import Profile from './Components/Profile/Profile';
 
 function App() {
   return (
-    <>
-    <Header />
-    <Technologies />
-    <Footer />
-    </>
+      <div className='app-wrapper'>
+          <Header/>
+          <Nav/>
+          <Profile/>
+          <Footer/>
+      </div>
   );
 }
 
