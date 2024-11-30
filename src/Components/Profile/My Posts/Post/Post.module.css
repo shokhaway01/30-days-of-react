@@ -1,9 +1,48 @@
 .container {
-    background-color: #000;
-    width: 100%;
+    border: 4px solid black;
+    background-color: #fff;
+    border-radius: 15px;
+    position: relative;
+    margin: 10px 0;
+    padding: 20px;
+}
+
+.container img{
+    border-radius: 50%;
 }
 
 .chast {
-    background-color: #fff;
+    color: #363636;
+    padding: 15px 0;
+}
+
+
+.postBody{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    position: relative;
+    row-gap: 20px;
+}
+
+.topSide{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imageContainer{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.data{
+    justify-self: self-end;
+}
+
+.postText{
+    margin: 10px 0;
 }
 

@@ -6,20 +6,34 @@ import Post from './Post/Post'
 const MyPosts = () => {
     return (
         <div>
-            My posts
-            <div>
-          <textarea name="" id="">
             
-          </textarea>
+            <div className={s.postCreate}>
+                
+              
 
-                <button>Add Post</button>
-                <button>Remove</button>
+                    <textarea name="" id="" >
+            
+                    </textarea>
+
+
+
+                
+                <button className={s.addPost}>📩</button>
 
 
             </div>
 
+
+            <div className={s.myPostSlogan}>
+                My posts:
+            </div>
+
             <div className={s.postsContainer}>
                 <Post/>
+                <Post/>
+                <Post/>
+                <Post/>
+                
             </div>
 
         </div>
