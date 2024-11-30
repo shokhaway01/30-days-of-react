@@ -29,10 +29,10 @@ const MyPosts = () => {
             </div>
 
             <div className={s.postsContainer}>
-                <Post/>
-                <Post/>
-                <Post/>
-                <Post/>
+                <Post message={'Hello'} likes="15" />
+                <Post message={"Shoh u're awesome"}/>
+                <Post message={"I,m your fan!!"}/>
+                <Post message={"lorem ipsum dolor sit amet vinca visca barcs visca cataloniya"}/>
                 
             </div>
 

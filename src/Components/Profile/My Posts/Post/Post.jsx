@@ -2,7 +2,7 @@ import React from 'react'
 import s from './Post.module.css'
 
 
-const Post = () => {
+const Post = (props) => {
     return (
         <div className={s.postBody}>
 
@@ -37,14 +37,16 @@ const Post = () => {
                     <div className={s.chast}>
                     <hr />
                         <div className={s.postText}>
-                            Hello World!    
+                            {props.message}    
                         </div>
 
                     <hr />
                     </div>
 
                     <div className={s.reactions}>
-                        💖✍
+                        <div>
+                        {props.likes}💖
+                        </div>
                     </div>
 
                 </div>
