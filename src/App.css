@@ -25,3 +25,11 @@ body{
     height: auto;
 
 }
+
+
+.app-wrapper-content{
+    grid-area: con;
+    background-color: aqua;
+    position: relative;
+    align-items: center;
+}

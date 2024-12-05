@@ -1,0 +1,33 @@
+.dialogs{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.active{
+    color: rgb(255, 0, 217);
+    text-decoration: none;
+}
+
+.dialogItem{
+    color: black;
+    text-decoration: none;
+    text-shadow: 0 0 2px black;
+}
+
+
+/* .dialogs .dialogsItem{
+
+}
+
+.dialogs .dialogsItem .dialog a{
+
+}
+
+
+.dialogs .messages{
+
+} */
+
+.dialogs .messages .message{
+    color: red;
+}
