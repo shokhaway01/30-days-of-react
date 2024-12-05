@@ -38,11 +38,10 @@ const MyPosts = () => {
             </div>
 
             <div className={s.postsContainer}>
-                <Post message={postData[0].message} likes={postData[0].likesCount} />
-                <Post message={postData[1].message} likes={postData[1].likesCount} />
-                <Post message={postData[2].message} likes={postData[2].likesCount} />
-                <Post message={postData[3].message} likes={postData[3].likesCount} />
-                <Post message={postData[4].message} likes={postData[4].likesCount} />
+
+                {postData.map( post => <Post message={post.message} likes={post.likesCount}/> )}
+
+              
                 
                 
             </div>
