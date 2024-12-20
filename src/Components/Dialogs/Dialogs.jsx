@@ -4,16 +4,15 @@ import s from "./dialogs.module.css"
 import DialogItem from './DialogItem/DialogItem';
 import { Message } from './Message/Message';
 
-
-
 const Dialogs = (props) => {
+
     return (
         <div className={s.dialogs}>
             <div className={s.dialogsItem}>
 
+                {console.log(props)}
 
-
-                {props.DialogsData.map(dialog => <DialogItem name={dialog.name} id={dialog.id} />)}
+                {props.state.DialogsData.map(dialog => <DialogItem name={dialog.name} id={dialog.id} />)}
 
 
 
@@ -22,7 +21,7 @@ const Dialogs = (props) => {
 
             <div className={s.messages}>
 
-                {props.MessagesData.map((el) => {
+                {props.state.MessagesData.map((el) => {
                     return <Message message={el.message} />
                 })}
 

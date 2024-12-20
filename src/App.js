@@ -6,7 +6,11 @@ import Profile from './Components/Profile/Profile';
 import Dialogs from './Components/Dialogs/Dialogs';
 import {Route, Routes} from 'react-router-dom';
 
+
+
 function App(props) {
+
+
   return (
       <div className='app-wrapper'>
           <Header/>
@@ -16,8 +20,8 @@ function App(props) {
             
             <Routes>
               <Route element={'Это главная страница, чтобы что-то отобразилось нажмите на Profile'} path='/'/>
-              <Route element={<Dialogs MessagesData={props.MessagesData} DialogsData={props.DialogsData}/>} path={"/dialogs/*9999999"}/>
-              <Route element={<Profile postData={props.postData}/>} path={"/profile/*"}/>
+              <Route element={<Dialogs state={props.state.DialogsPage}/>} path={"/dialogs/*"}/>
+              <Route element={<Profile state={props.state.ProfilePage}/>} path={"/profile/*"}/>
             </Routes>
           
 
