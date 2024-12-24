@@ -8,6 +8,8 @@ import {Route, Routes} from 'react-router-dom';
 
 
 
+console.log('Hello world')
+
 function App(props) {
 
 

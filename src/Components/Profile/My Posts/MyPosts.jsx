@@ -20,7 +20,7 @@ const MyPosts = (props) => {
 
 
                 
-                <button className={s.addPost}>📩</button>
+                <button className={s.addPost} onClick={() => alert('Кнопвка работает')}>📩</button>
 
 
             </div>
