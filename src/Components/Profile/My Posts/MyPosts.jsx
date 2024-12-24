@@ -5,7 +5,16 @@ import Post from './Post/Post'
 
 const MyPosts = (props) => {
 
-   
+let newPostData = React.createRef();
+
+let addpost = () =>{
+    alert(newPostData.current.value)
+}
+
+
+
+
+
     return (
         <div>
             
@@ -13,14 +22,16 @@ const MyPosts = (props) => {
                 
               
 
-                    <textarea name="" id="" >
+                    <textarea name="" id="" ref={newPostData} >
             
                     </textarea>
 
 
 
+
+
                 
-                <button className={s.addPost} onClick={() => alert('Кнопвка работает')}>📩</button>
+                <button className={s.addPost} onClick={addpost}>📩</button>
 
 
             </div>
