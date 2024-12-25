@@ -1,6 +1,8 @@
 .dialogs{
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+    "item messages" 
+    "item create";
 }
 
 .active{
@@ -15,18 +17,31 @@
 }
 
 
-/* .dialogs .dialogsItem{
-
+.dialogsItem{
+    grid-area: item;
 }
 
-.dialogs .dialogsItem .dialog a{
-
+.messages{
+    grid-area: messages;
 }
 
+.messageCreator{
+    grid-area: create;
+    display: flex;
+}
 
-.dialogs .messages{
+.creatorBox textarea{
+    width: 350px;
+}
 
-} */
+.creatorBtn button{
+    width: 55px;
+    height: 30px;
+    background-color: yellow;
+    font-weight: 650;
+    border: 1px solid darkblue;
+}
+
 
 .dialogs .messages .message{
     color: red;

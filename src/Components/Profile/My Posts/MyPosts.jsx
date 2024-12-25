@@ -8,7 +8,8 @@ const MyPosts = (props) => {
 let newPostData = React.createRef();
 
 let addpost = () =>{
-    alert(newPostData.current.value)
+    props.addPost(newPostData.current.value)
+    newPostData.current.value = "";
 }
 
 
@@ -22,7 +23,7 @@ let addpost = () =>{
                 
               
 
-                    <textarea name="" id="" ref={newPostData} >
+                    <textarea name="" id="" ref={newPostData} placeholder='Введите текст'>
             
                     </textarea>
 

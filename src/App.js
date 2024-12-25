@@ -22,8 +22,8 @@ function App(props) {
             
             <Routes>
               <Route element={'Это главная страница, чтобы что-то отобразилось нажмите на Profile'} path='/'/>
-              <Route element={<Dialogs state={props.state.DialogsPage}/>} path={"/dialogs/*"}/>
-              <Route element={<Profile state={props.state.ProfilePage}/>} path={"/profile/*"}/>
+              <Route element={<Dialogs state={props.state.DialogsPage} addMessage={props.addMessage}/>} path={"/dialogs/*"}/>
+              <Route element={<Profile state={props.state.ProfilePage} addPost={props.addPost}/>} path={"/profile/*"}/>
             </Routes>
           
 

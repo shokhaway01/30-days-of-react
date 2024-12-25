@@ -1,3 +1,5 @@
+import { Render } from "../render";
+
 let state = {
     ProfilePage:{
         postData:[
@@ -26,6 +28,30 @@ let state = {
           ]
     }
     
+}
+
+
+export let addMessage = (messageValue) => {
+
+  let newMessage = {
+    id: 0,
+    message: messageValue
+  }
+
+  state.DialogsPage.MessagesData.push(newMessage);
+  Render(state);
+}
+
+export let addPost = (PostMessage) => {
+
+  let newPost = {
+    id:0,
+    message: PostMessage,
+    likesCount: 0
+  };
+
+  state.ProfilePage.postData.unshift(newPost)
+  Render(state);
 }
 
   
