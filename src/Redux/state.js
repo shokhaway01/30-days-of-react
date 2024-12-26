@@ -50,7 +50,13 @@ export let addPost = (PostMessage) => {
     likesCount: 0
   };
 
-  state.ProfilePage.postData.unshift(newPost)
+
+  if(newPost.message === ""|| newPost.message === " "){
+    alert("Нельзя создать пустой пост!")
+  }else{
+    state.ProfilePage.postData.unshift(newPost)
+  }
+
   Render(state);
 }
 

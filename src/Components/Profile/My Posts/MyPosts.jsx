@@ -5,12 +5,16 @@ import Post from './Post/Post'
 
 const MyPosts = (props) => {
 
-let newPostData = React.createRef();
+    let newPostData = React.createRef();
 
-let addpost = () =>{
-    props.addPost(newPostData.current.value)
-    newPostData.current.value = "";
-}
+    let addpost = () => {
+        if (newPostData.current.value !== " " || newPostData.current.value !== "") {
+            props.addPost(newPostData.current.value)
+            newPostData.current.value = "";
+        }else{
+            alert('Error')
+        }
+    }
 
 
 
@@ -18,21 +22,21 @@ let addpost = () =>{
 
     return (
         <div>
-            
+
             <div className={s.postCreate}>
-                
-              
-
-                    <textarea name="" id="" ref={newPostData} placeholder='Введите текст'>
-            
-                    </textarea>
 
 
 
+                <textarea name="" id="" ref={newPostData} placeholder='Введите текст'>
+
+                </textarea>
 
 
-                
-                <button className={s.addPost} onClick={addpost}>📩</button>
+
+
+
+
+                <button className={s.addPost} onClick={addpost}>Созодать пост 📩</button>
 
 
             </div>
@@ -44,11 +48,11 @@ let addpost = () =>{
 
             <div className={s.postsContainer}>
 
-                {props.postData.map( post => <Post message={post.message} likes={post.likesCount}/> )}
+                {props.postData.map(post => <Post message={post.message} likes={post.likesCount} />)}
 
-              
-                
-                
+
+
+
             </div>
 
         </div>

@@ -1,6 +1,8 @@
 .header {
-    background-color: rebeccapurple;
+    background-color: #7f5539;
     grid-area: head;
+    padding: 0 25px;
+    display: flex;
 }
 
 .header img {

@@ -1,6 +1,7 @@
 .navigation {
-    background-color: red;
+    background-color: #7f5539;
     grid-area: nav;
+    padding: 25px;
 }
 
 .direction {
