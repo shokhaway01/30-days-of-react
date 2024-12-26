@@ -11,7 +11,7 @@ const ProfileInfo = () => {
         </div>
 
         <div>
-            ava+description
+            ava+description s
         </div>
 
     </div>
