@@ -27,7 +27,7 @@ const MyPosts = (props) => {
 
 
 
-                <textarea name="" id="" ref={newPostData} placeholder='Введите текст'>
+                <textarea name="" id="" ref={newPostData} placeholder='Введите текст' value={"shokhaway"}>
 
                 </textarea>
 
