@@ -9,13 +9,16 @@ const MyPosts = (props) => {
 
     let addpost = () => {
         if (newPostData.current.value !== " " || newPostData.current.value !== "") {
-            props.addPost(newPostData.current.value)
-            newPostData.current.value = "";
+            props.addPost()
         }else{
             alert('Error')
         }
     }
 
+
+    let onPostChange = () =>{
+        props.updatePostText(newPostData.current.value);
+    }
 
 
 
@@ -27,13 +30,12 @@ const MyPosts = (props) => {
 
 
 
-                <textarea name="" id="" ref={newPostData} placeholder='Введите текст' value={"shokhaway"}>
+                <textarea name="" id="" ref={newPostData} placeholder='Введите текст' value={props.newPostText} onChange={onPostChange}>
 
                 </textarea>
 
 
-
-
+                {/* {console.log(props)} */}
 
 
                 <button className={s.addPost} onClick={addpost}>Созодать пост 📩</button>
