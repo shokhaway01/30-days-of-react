@@ -35,7 +35,6 @@ const MyPosts = (props) => {
                 </textarea>
 
 
-                {/* {console.log(props)} */}
 
 
                 <button className={s.addPost} onClick={addpost}>Созодать пост 📩</button>

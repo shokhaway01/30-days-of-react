@@ -9,13 +9,17 @@ const Dialogs = (props) => {
 
 let sms = React.createRef()
 
+let onChangeMessage = () =>{
+    props.updateMessageText(sms.current.value)
+}
+
+
     return (
         <div className={s.dialogs}>
 
             {/* Тут у нас мапится имена контактов и их айдишки */}
             <div className={s.dialogsItem}>
 
-                {console.log(props)}
 
                 {props.state.DialogsData.map(dialog => <DialogItem name={dialog.name} id={dialog.id} />)}
 
@@ -42,12 +46,12 @@ let sms = React.createRef()
             <div className={s.messageCreator}>
 
                 <div className={s.creatorBox}>
-                    <textarea name="" id="" ref={sms}></textarea>
+                    <textarea name="" id="" ref={sms} onChange={onChangeMessage}></textarea>
                 </div>
 
                 <div className={s.creatorBtn}>
                     <button onClick={ () =>{
-                        props.addMessage(sms.current.value);
+                        props.addMessage();
                         sms.current.value = "";
                     } }>Send</button>
                 </div>

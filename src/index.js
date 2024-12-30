@@ -1,11 +1,10 @@
 import reportWebVitals from './reportWebVitals';
-import state from './Redux/state.js';
+import store from './Redux/state.js';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
-import { addPost, addMessage, updatePostText, subscribe } from './Redux/state.js'
 
 
 
@@ -22,7 +21,7 @@ export let Render = (state) =>{
       <React.StrictMode>
     
         <BrowserRouter>
-          <App state={state} addPost={addPost} addMessage={addMessage} updatePostText={updatePostText}/>
+          <App state={state} addPost={store.addPost} addMessage={store.addMessage} updateMessageText={store.updateMessageText} updatePostText={store.updatePostText}/>
         </BrowserRouter>
     
       </React.StrictMode>
@@ -30,8 +29,8 @@ export let Render = (state) =>{
   }
 
 
-  Render(state);
-  subscribe(Render)
+  Render(store.getState());
+  store.subscribe(Render)
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals

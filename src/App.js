@@ -8,7 +8,6 @@ import {Route, Routes} from 'react-router-dom';
 
 
 
-console.log('Hello world')
 
 function App(props) {
 
@@ -22,10 +21,11 @@ function App(props) {
             
             <Routes>
               <Route element={'Это главная страница, чтобы что-то отобразилось нажмите на Profile'} path='/'/>
-              <Route element={<Dialogs state={props.state.DialogsPage} addMessage={props.addMessage}/>} path={"/dialogs/*"}/>
+              <Route element={<Dialogs state={props.state.DialogsPage} updateMessageText={props.updateMessageText} addMessage={props.addMessage}/>} path={"/dialogs/*"}/>
               <Route element={<Profile state={props.state.ProfilePage} updatePostText={props.updatePostText} addPost={props.addPost}/>}  path={"/profile/*"}/>
             </Routes>
           
+          {}
 
           </div>
 
