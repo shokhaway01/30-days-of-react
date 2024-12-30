@@ -18,6 +18,10 @@ let state = {
       // А тут мы ловим значение нового поста в том же месте
 
         newPostText: "",
+
+      render: () =>{
+        console.log("Hello World")
+      }
     },
 
       // Данная ветка служит для компоненты Диалогов
@@ -90,4 +94,6 @@ export let addPost = () => {
 }
 
   
+state.render()
+
 export default state;
