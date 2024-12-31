@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 let store = {
   _state: {
     // Данная ветка относится к компоненте Profile
@@ -63,7 +61,6 @@ let store = {
     this.Render = observe;
   },
   updatePostText(newText) {
-    console.log(this._state, "");
     this._state.ProfilePage.newPostText = newText;
     this.Render(this._state);
   },
@@ -85,7 +82,7 @@ let store = {
     this._state.DialogsPage.MessagesData.push(newMessage);
     this.Render(this._state);
   },
-  addPost: () => {
+  addPost()  {
     console.log(this, "This")
     let newPost = {
       id: 0,
@@ -114,41 +111,51 @@ window.store = store;
 
 
 
-let shohObj = {
-  name: 'Shoh',
-  age: 19,
-  height: 187,
-}
-  let { name, age, height } =  {shohObj};
-  name = "Andrey";
+// let shohObj = {
+//   name: 'Shoh',
+//   age: 19,
+//   height: 187,
+// }
+//   let { name, age, height } =  {shohObj};
+//   name = "Andrey";
 
 
-  let arr = [1,2,3,4,5,6,7,8,9]
+//   let arr = [1,2,3,4,5,6,7,8,9]
 
-  let [0,1,2,3,4,5,6,7,8] = arr
-
-
-;let useState = (value) =>{
-  let useState = [
-    value,
-    function(){
-
-    }
-  ]
-
-  return useState
-}
-const functions = [ () => {}, () => {}, function x() {} ]
-
-let [func1,func2,func3]= functions
-
-  let [state, setState] = useState(0)
+//   let [0,1,2,3,4,5,6,7,8] = arr
 
 
-  console.log(state);
+// ;let useState = (value) =>{
+//   let useState = [
+//     value,
+//     function(){
+
+//     }
+//   ]
+
+//   return useState
+// }
+// const functions = [ () => {}, () => {}, function x() {} ]
+
+// let [func1,func2,func3]= functions
+
+//   let [state, setState] = useState(0)
+
+
+//   console.log(state);
   
+  // const [func, ...all] = functions
+  // console.log(all)
 
-  console.log(shohObj.name);
+  // let arrat = [
+  //   function name(params) {
+      
+  //   },
+  //       []
+  // ]
+
+
+  // console.log(shohObj.name);
   // console.log(age);
   // console.log(height);
   

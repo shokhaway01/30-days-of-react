@@ -22,7 +22,7 @@ export let Render = (state) =>{
       <React.StrictMode>
     
         <BrowserRouter>
-          <App state={state} addPost={store.addPost} addMessage={store.addMessage.bind(store)} updateMessageText={store.updateMessageText.bind(store)} updatePostText={store.updatePostText.bind(store)}/>
+          <App state={state} addPost={store.addPost.bind(store)} addMessage={store.addMessage.bind(store)} updateMessageText={store.updateMessageText.bind(store)} updatePostText={store.updatePostText.bind(store)}/>
         </BrowserRouter>
     
       </React.StrictMode>

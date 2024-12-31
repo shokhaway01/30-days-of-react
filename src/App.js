@@ -25,7 +25,6 @@ function App(props) {
               <Route element={<Profile state={props.state.ProfilePage} updatePostText={props.updatePostText} addPost={props.addPost}/>}  path={"/profile/*"}/>
             </Routes>
           
-          {}
 
           </div>
 

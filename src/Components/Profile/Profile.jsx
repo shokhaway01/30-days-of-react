@@ -11,7 +11,6 @@ const Profile = (props) => {
 
                 <ProfileInfo />
 
-            {console.log(props)}
 
                 <MyPosts updatePostText={props.updatePostText} postData={props.state.postData} addPost={props.addPost} newPostText={props.state.newPostText} />
 
