@@ -57,7 +57,6 @@ let store = {
     console.log("---");
   },
   subscribe(observe) {
-    // debugger;
     this.Render = observe;
   },
   updatePostText(newText) {
