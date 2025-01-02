@@ -53,7 +53,7 @@ let store = {
     return this._state;
   },
   Render() {
-    // Пустая функция для отлова внешней функции
+    // Пустая функция для отлова внешн ей функции
     console.log("---");
   },
   subscribe(observe) {
