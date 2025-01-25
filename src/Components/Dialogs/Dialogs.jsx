@@ -20,7 +20,7 @@ let onChangeMessage = () =>{
             {/* Тут у нас мапится имена контактов и их айдишки */}
             <div className={s.dialogsItem}>
 
-
+            
                 {props.state.DialogsData.map(dialog => <DialogItem name={dialog.name} id={dialog.id} />)}
 
 

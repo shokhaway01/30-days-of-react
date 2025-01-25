@@ -18,7 +18,7 @@ function App(props) {
           <Nav/>
           
           <div className='app-wrapper-content'>
-            
+            {/* Применик радио */}
             <Routes>
               <Route element={'Это главная страница, чтобы что-то отобразилось нажмите на Profile'} path='/'/>
               <Route element={<Dialogs state={props.state.DialogsPage} updateMessageText={props.updateMessageText} addMessage={props.addMessage}/>} path={"/dialogs/*"}/>
@@ -32,6 +32,11 @@ function App(props) {
       </div>
   );
 }
+
+
+// API = application program inteface
+
+ 
 
 
 export default App;
