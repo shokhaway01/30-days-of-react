@@ -1,3 +1,8 @@
+import { profileReducer } from "./profilePageReducer";
+import { dialogsReducer } from "./dialogsPageReducer";
+import { sidebarReducer } from "./sidebarPageReducer";
+
+
 let store = {
   _state: {
     // Данная ветка относится к компоненте Profile
@@ -48,7 +53,14 @@ let store = {
 
       newMessageData: "",
     },
+
+    // Sidebar
+
+    // SideBar: {
+
+    // }
   },
+  //  Взаимодействие со стейтом
   getState() {
     return this._state;
   },
@@ -59,44 +71,18 @@ let store = {
   subscribe(observe) {
     this.Render = observe;
   },
-  updatePostText(newText) {
-    this._state.ProfilePage.newPostText = newText;
-    this.Render(this._state);
-  },
-  updateMessageText(newText) {
-    this._state.DialogsPage.newMessageData = newText;
-    this.Render(this._state);
-  },
-  addMessage() {
-    let newMessage = {
-      id: 0,
-      message: this._state.DialogsPage.newMessageData,
-    };
+  // обновление состояния
+  dispatch(action) {
+    
+    this._state.ProfilePage = profileReducer(this._state.ProfilePage, action);
+    this._state.DialogsPage = dialogsReducer(this._state.DialogsPage, action);
+    this._state.SideBar = sidebarReducer(this._state.SideBar, action);
 
-    if (newMessage.message === "" || newMessage.message === " ") {
-      alert("Нельзя отправить пустое сообщение!");
-    } else {
-      this._state.ProfilePage.postData.unshift(newMessage);
-    }
-    this._state.DialogsPage.MessagesData.push(newMessage);
     this.Render(this._state);
-  },
-  addPost()  {
-    console.log(this, "This")
-    let newPost = {
-      id: 0,
-      message: this._state.ProfilePage.newPostText,
-      likesCount: 0,
-    };
-
-    if (newPost.message === "" || newPost.message === " ") {
-      alert("Нельзя создать пустой пост!");
-    } else {
-      this._state.ProfilePage.postData.unshift(newPost);
-    }
-
-    this._state.ProfilePage.newPostText = "";
-    this.Render(this._state);
+    
+    
+    
+   
   },
 };
 
@@ -105,10 +91,9 @@ window.store = store;
 
 
 
+
+
 // --------------------------
-
-
-
 
 // let shohObj = {
 //   name: 'Shoh',
@@ -118,11 +103,9 @@ window.store = store;
 //   let { name, age, height } =  {shohObj};
 //   name = "Andrey";
 
-
 //   let arr = [1,2,3,4,5,6,7,8,9]
 
 //   let [0,1,2,3,4,5,6,7,8] = arr
-
 
 // ;let useState = (value) =>{
 //   let useState = [
@@ -140,21 +123,18 @@ window.store = store;
 
 //   let [state, setState] = useState(0)
 
-
 //   console.log(state);
-  
-  // const [func, ...all] = functions
-  // console.log(all)
 
-  // let arrat = [
-  //   function name(params) {
-      
-  //   },
-  //       []
-  // ]
+// const [func, ...all] = functions
+// console.log(all)
 
+// let arrat = [
+//   function name(params) {
 
-  // console.log(shohObj.name);
-  // console.log(age);
-  // console.log(height);
-  
+//   },
+//       []
+// ]
+
+// console.log(shohObj.name);
+// console.log(age);
+// console.log(height);

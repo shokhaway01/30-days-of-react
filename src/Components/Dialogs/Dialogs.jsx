@@ -11,6 +11,11 @@ let sms = React.createRef()
 
 let onChangeMessage = () =>{
     props.updateMessageText(sms.current.value)
+    
+}
+
+let addMessage = () =>{
+    props.addSms(sms)
 }
 
 
@@ -21,7 +26,7 @@ let onChangeMessage = () =>{
             <div className={s.dialogsItem}>
 
             
-                {props.state.DialogsData.map(dialog => <DialogItem name={dialog.name} id={dialog.id} />)}
+                {props.DialogsData.map(dialog => <DialogItem name={dialog.name} id={dialog.id} />)}
 
 
 
@@ -32,7 +37,7 @@ let onChangeMessage = () =>{
             {/* Тут у нас мапится сообщения */}
             <div className={s.messages}>
 
-                {props.state.MessagesData.map((el) => {
+                {props.MessagesData.map((el) => {
                     return <Message message={el.message} />
                 })}
 
@@ -50,10 +55,7 @@ let onChangeMessage = () =>{
                 </div>
 
                 <div className={s.creatorBtn}>
-                    <button onClick={ () =>{
-                        props.addMessage();
-                        sms.current.value = "";
-                    } }>Send</button>
+                    <button onClick={ addMessage }>Send</button>
                 </div>
 
             </div>
