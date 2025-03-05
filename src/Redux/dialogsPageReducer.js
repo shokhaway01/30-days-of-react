@@ -37,13 +37,17 @@ export const dialogsReducer = (state = inition, action) => {
         message: state.newMessageData,
       };
 
+
+      let stateCopy = {...state}
+      stateCopy.MessagesData = [...state.MessagesData]
+
       if (newMessage.message === "" || newMessage.message === " ") {
         alert("Нельзя отправить пустое сообщение!");
       } else {
-        state.MessagesData.push(newMessage);
-        state.newMessageData = ""
+        stateCopy.MessagesData.push(newMessage);
+        stateCopy.newMessageData = ""
       }
-      return state
+      return stateCopy
     default:
         return state;
   }

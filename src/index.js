@@ -17,8 +17,6 @@ import { Provider } from 'react-redux';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-export let Render = (state) =>{
-
   root.render(
       <React.StrictMode>
     
@@ -30,13 +28,6 @@ export let Render = (state) =>{
     
       </React.StrictMode>
     );
-  }
 
 
-  
-  store.subscribe(() => {
-    let state = store.getState();
-    Render(state)
-  })
-  Render(store.getState())
-reportWebVitals();
+  reportWebVitals();

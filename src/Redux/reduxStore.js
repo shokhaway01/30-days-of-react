@@ -4,8 +4,10 @@ import { dialogsReducer } from "./dialogsPageReducer";
 import { sidebarReducer } from "./sidebarPageReducer";
 
 
+// Импортируем 3 редюссера 
 
-// Редюссеры 
+
+// Редюссеры +
 let reducers = combineReducers({
     
     // Profile Page Редюссер
@@ -14,8 +16,10 @@ let reducers = combineReducers({
     DialogsPage:dialogsReducer,
     // Side Bar Редюссер 
     sideBar:sidebarReducer
+    
 });
 let store = createStore(reducers)
-console.log(store.getState());
+
+window.store = store;
 
 export default store;

@@ -34,18 +34,23 @@ export const profileReducer = (state = inition, action) => {
         message: state.newPostText,
         likesCount: 0,
       };
+      let stateCopy = {...state};
+      stateCopy.postData = [...state.postData];
 
+      
       if (newPost.message === "" || newPost.message === " ") {
         alert("Нельзя создать пустой пост!");
       } else {
-        state.postData.unshift(newPost);
+        stateCopy.postData.unshift(newPost)
       }
-
-      state.newPostText = "";
-      return state;
-    case UPDATE_POST_TEXT:
-      state.newPostText = action.newText;
-      return state;
+      stateCopy.newPostText = "";
+      return stateCopy;
+      
+    case UPDATE_POST_TEXT:{
+      let stateCopy = {...state}
+      stateCopy.newPostText = action.newText;
+      return stateCopy;
+    };
     default:
       return state;
   }

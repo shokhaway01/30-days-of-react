@@ -3,10 +3,12 @@ import s from "./MyPosts.module.css";
 
 import Post from "./Post/Post";
 
+
+
+
 const MyPosts = (props) => {
   let newPostData = React.createRef();
-
-  console.log(props);
+  
   
 
   let addpost = () => {

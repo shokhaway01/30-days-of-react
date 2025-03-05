@@ -5,6 +5,8 @@ import MyPostsContainer from './My Posts/MyPostsContainer'
 
 const Profile = (props) => {
     
+    
+
     return (
         <article>
 
